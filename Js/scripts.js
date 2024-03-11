@@ -44,12 +44,12 @@ let pokemonList = [
 ];
 
 
-for (let i=0; i<pokemonList.length; i++) 
-if (pokemonList[i].heights === 1.1 ){
-    document.write(pokemonList[i].name + "" + pokemonList[i].heights + ''+ "is a normal pokemon");
+for (let i=0; i<pokemonList.length; i++){ 
+if (pokemonList[i].heights === 1.1 ){ 
+    document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " is a normal pokemon. ", "</p>");
 }else if (pokemonList[i].heights < 1.0) {
-    document.write(pokemonList[i].name + "" + pokemonList[i].heights + ''+ "is a small pokemon");
+    document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " is a small pokemon. ", "</p>");
 }else{
-    document.write(pokemonList[i].name + "" + pokemonList[i].heights + ''+ "WOW! it is a big pokemon");
+    document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " WOW, that's big! ", "</p>");
 }
-    
+}
