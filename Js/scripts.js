@@ -43,13 +43,27 @@ let pokemonList = [
     }
 ];
 
+//unction printArrayDetails(){
+//  for (let i=0; i<pokemonList.length; i++){ 
+//  if (pokemonList[i].heights === 1.1 ){ 
+//      document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " is a normal pokemon. ", "</p>");
+//  }else if (pokemonList[i].heights < 1.0) {
+//      document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " is a small pokemon. ", "</p>");
+//  }else{
+//      document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " WOW, that's big! ", "</p>");
+//  }
+//  }
 
-for (let i=0; i<pokemonList.length; i++){ 
-if (pokemonList[i].heights === 1.1 ){ 
-    document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " is a normal pokemon. ", "</p>");
-}else if (pokemonList[i].heights < 1.0) {
-    document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " is a small pokemon. ", "</p>");
-}else{
-    document.write("<p>", pokemonList[i].name + " (height: " + pokemonList[i].heights + ' )' + " WOW, that's big! ", "</p>");
-}
-}
+
+//printArrayDetails();
+//printArrayDetails();
+
+pokemonList.forEach (function(pokemon){
+    if (pokemon.heights === 1.1 ){ 
+        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " is a normal pokemon. ", "</p>");
+    }else if (pokemon.heights < 1.0){
+        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " is a small pokemon. ", "</p>"); 
+    }else{
+        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " WOW, that's big! ", "</p>");
+    }
+    });
