@@ -60,15 +60,7 @@ let pokemonList = [
 //printArrayDetails();
 //printArrayDetails();
 
-//pokemonList.forEach (function(pokemon){
-//    if (pokemon.heights === 1.1 ){ 
-//        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " is a normal pokemon. ", "</p>");
-//    }else if (pokemon.heights < 1.0){
-//        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " is a small pokemon. ", "</p>"); 
-//    }else{
-//        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " WOW, that's big! ", "</p>");
-//    }
-//    });
+
 
 function add (pokemon){
     pokemonList.push(pokemon);
@@ -79,11 +71,22 @@ function getAll(){
 }
 
 return{
-    getAll: getAll,
-    add: add
+    add: add,
+    getAll: getAll
+
 };
 })();
 
-console.log(pokemonRepository.getAll());
+
 pokemonRepository.add ({name: "Arcanine", heights: 1.9, weight: 155, type:"fire", abilities:["flashFire", "intimidate", "justified"]});
-console.log(pokemonRepository.getAll());
+document.write(pokemonRepository.getAll());
+
+pokemonRespository.getAll().forEach (function(pokemon){
+    if (pokemon.heights === 1.1 ){ 
+        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " is a normal pokemon. ", "</p>");
+    }else if (pokemon.heights < 1.0){
+        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " is a small pokemon. ", "</p>"); 
+    }else{
+        document.write("<p>", pokemon.name + " (height: " + pokemon.heights + ' )' + " WOW, that's big! ", "</p>");
+    }
+    });
