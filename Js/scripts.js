@@ -56,11 +56,11 @@ function getAll(){
 
 function addListItem(pokemon){
     let pokemonList = document.querySelector(".pokemon-list");
-    let pokemonListItem = documentcreateElement("li");
-    let pokemonButton = document.createElement ("button");
-    pokemonButton.innerText = "pokemon.name";
-    pokemonButton.classList.add("button-class");
-    pokemonListItem.appendChild(button);
+    let listpokemon = document.createElement("li");
+    let button = document.createElement ("button");
+    button.innerText = ("pokemon.name");
+    button.classList.add("button-class");
+    listpokemon.appendChild(button);
     pokemonList.appendChild(pokemonListItem); 
 }
 
@@ -70,7 +70,7 @@ function addListItem(pokemon){
         addListItem: addListItem
 }})();
 
-document.write(pokemonRepository.getAll());
+
 pokemonRepository.add ({name: "Arcanine", heights: 1.9, weight: 155, type:"fire", abilities:["flashFire", "intimidate", "justified"]});
 
 document.write(pokemonRepository.getAll());
