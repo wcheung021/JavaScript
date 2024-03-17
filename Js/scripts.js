@@ -42,9 +42,9 @@ let pokemonRepository = (function () {
           type: ["flying", "normal"], 
           abilities: ["keen-eye", "tangled-feet", "big-pecks"]
       }
-  ];
+    ];
   
-  function add (pokemon){
+    function add (pokemon){
       if(
           typeof pokemon === "object" &&
           "name" in pokemon &&
@@ -53,44 +53,45 @@ let pokemonRepository = (function () {
           "type" in pokemon &&
           "abilities" in pokemon
       ){
-  repository.push(pokemon);
+    
+        repository.push(pokemon);
       }
-  }
+    }
   
     function getAll(){
       return repository;
     }
     
     function addListItem(pokemon){
-      let pokemonList = document.querySelector(".pokemon-list");
-      let listpokemon = document.createElement("li");
-      let button = document.createElement("button");
-      button.innerText = pokemon.name;
-      button.classList.add("button-class");
-      listpokemon.appendChild(button);
-      pokemonList.appendChild(listpokemon);
-      button.addEventListener("click", function(event){
-        showDetails(pokemon);
-        document.createElement("button")
-    });
-}
+        let pokemonList = document.querySelector(".pokemon-list");
+        let listpokemon = document.createElement("li");
+        let button = document.createElement("button");
+        button.innerText = pokemon.name;
+        button.classList.add("button-class");
+        listpokemon.appendChild(button);
+        pokemonList.appendChild(listpokemon);
+        button.addEventListener("click", function(event){
+            showDetails(pokemon);
+        });
+    }
 
-function showDetails(pokemon){
-    console.log(pokemon);
-}
+
+    function showDetails(pokemon){
+        console.log(pokemon);
+    }
     
     return{
-      add: add,
+        add: add,
         getAll: getAll,
         addListItem: addListItem
     };
   })();
   
-  pokemonRepository.add ({name: "Arcanine", height: 1.9, weight: 155, type:"fire", abilities:["flashFire", "intimidate", "justified"]});
+    pokemonRepository.add ({name: "arcanine", height: 1.9, weight: 155, type:"fire", abilities:["flashFire", "intimidate", "justified"]});
   
   
-  pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
-  });
+    });
         
     
