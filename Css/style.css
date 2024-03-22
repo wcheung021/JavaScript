@@ -1,8 +1,22 @@
+body {
+  background-color: aliceblue;
+}
+
+.title{
+  text-align: left;
+  
+}
+
 button {
-  background-color: #D3D3D3; 
+  
+  background-color: rgb(186, 101, 56); 
+  border: 2px solid;
   border-radius: 10px;
   color: black;
   padding: 10px 15px;
+  width: 200px;
+  align-items: center;
+  font-size: larger;
   display: inline-block;
   text-align: center;
   cursor: pointer;
@@ -12,8 +26,9 @@ button {
     display: none;
   }
 
-  #modal-container.is-visible {
+  #modal-container.is-visible{
     position: fixed;
+    text-align: center;
     padding: 20px;
     box-sizing: border-box;
     top: 0;
@@ -32,3 +47,5 @@ button {
     display: grid;
     text-align: center;
   }
+
+  
