@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+  background-color: #e3eff6;
 }
 
 .title{
@@ -9,10 +9,10 @@ body {
 
 button {
   
-  background-color: rgb(186, 101, 56); 
-  border: 2px solid;
+  background-color: #92c0d8; 
+  border: 2px solid #4F95B9;
   border-radius: 10px;
-  color: black;
+  color: #1B6F9A;
   padding: 10px 15px;
   width: 200px;
   align-items: center;
@@ -20,6 +20,7 @@ button {
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  
   }
 
   #modal-container {
