@@ -1,35 +1,18 @@
 body {
-    background-color: #4f95b9;
+    background-color:  #F6FAFB;
   }
   
   
   
+  .pokemon-list{
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: #75ABDC;
+  }
 
-  
-    #modal-container {
-      display: none;
-    }
-  
-    #modal-container.is-visible{
-      position: fixed;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      
-      /* to show it above other content */
-      z-index: 999; 
-      
-      /* to allow scrolling if the screen is not high enough*/
-      overflow: auto; 
-      
-      /* this is used to center the modal */
-      display: grid;
-      text-align: center;
-    }
+  ul{
+    list-style-type: none;
+  }
   
     
