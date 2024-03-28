@@ -1,27 +1,10 @@
 body {
-    background-color: #e3eff6;
+    background-color: #4f95b9;
   }
   
-  .title{
-    text-align: left;
-    
-  }
   
-  button {
-    
-    background-color: #92c0d8; 
-    border: 2px solid #4F95B9;
-    border-radius: 10px;
-    color: #1B6F9A;
-    padding: 10px 15px;
-    width: 200px;
-    align-items: center;
-    font-size: larger;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    
-    }
+  
+
   
     #modal-container {
       display: none;
