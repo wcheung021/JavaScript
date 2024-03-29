@@ -59,8 +59,8 @@ let apiUrl= "https://pokeapi.co/api/v2/pokemon/?limit=150";
             pokemon.imageUrl = details.sprites.front_default;
             pokemon.height = details.height;
             pokemon.weight = details.weight;
-            pokemon.type = details.type;
-            pokemon.abilities = details.abilities;
+            pokemon.type = details.types.map(type => type.type.name).join(', ');
+            pokemon.abilities = details.abilities.map(ability => ability.ability.name).join(', ');
             }).catch(function(e){
             console.log(e);
             });
