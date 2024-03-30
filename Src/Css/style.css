@@ -10,7 +10,7 @@ body {
     display: fixed;
     justify-content: center;
     align-items: center;
-    background-color: #7bceef;
+    background-color:#4cbacc;
   }
 
 
@@ -23,8 +23,8 @@ body {
   }
 
   .button-item{
-    background-color: #9cbde7;
-    color: white;
+    background-color: #8cd5e0;
+    color: #0F6C7A;
     width: 180px;
     flex: 1;
     display: fixed ;
