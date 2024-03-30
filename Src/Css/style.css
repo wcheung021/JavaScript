@@ -1,0 +1,38 @@
+body {
+    font-family: "VT3232", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  
+  .pokemon-list{
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: #7bceef;
+  }
+
+
+  ul{
+    list-style-type: none;
+  }
+  
+  div {
+    padding: 10px;
+  }
+
+  .button-item{
+    background-color: #9cbde7;
+    color: white;
+    width: 180px;
+    flex: 1;
+    display: fixed ;
+  }
+
+  .button-item:focus, .button-item:hover {
+    cursor: pointer;
+    opacity: .8;
+    background: color #c6def7;;
+  }
+    
