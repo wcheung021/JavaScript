@@ -18,6 +18,10 @@ let pokemonRepository = (function () {
         });
     }
 
+    fetchData();
+
+    let interval = setInterval(fetchData, 5000);
+
     function add(pokemon) {
       if (
         typeof pokemon === "object" &&
