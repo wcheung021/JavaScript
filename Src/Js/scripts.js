@@ -1,7 +1,23 @@
 let pokemonRepository = (function () {
     let pokemonList = [];
     let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
-  
+
+    function fetchData(){
+      fetch (apiUrl)
+        .then(response =>{
+          if (!response.ok){
+            throw new Error("Error 404");
+          }
+          return response.jspn();
+        })
+        .then(data =>{
+          console.log(data);
+        })
+        .catch(error =>{
+          console.error("Error 404", error);
+        });
+    }
+
     function add(pokemon) {
       if (
         typeof pokemon === "object" &&
